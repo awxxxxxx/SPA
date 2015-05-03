@@ -148,7 +148,7 @@ spa.model = (function() {
         };
 
         logout = function() {
-            var user = stateMap.user;
+            var user = stateMap.user,is_removed;
             chat._leave();
             is_removed = removePerson(user);
             stateMap.user = stateMap.anon_user;
@@ -233,7 +233,7 @@ spa.model = (function() {
         };
 
         _leave_chat = function() {
-            var sio = isFakeData ? spa.fake.mockSio : spa.date.getSio();
+            var sio = isFakeData ? spa.fake.mockSio : spa.data.getSio();
             chatee = null;
             stateMap.is_connected = false;
             if(sio) {
