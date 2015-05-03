@@ -1,0 +1,25 @@
+{
+  "name": "SPA",
+  "version": "1.0.0",
+  "description": "单页面 Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/dsxbb/SPA.git"
+  },
+  "author": "waterbear",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "3.2.x",
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-jslint": "^0.2.2",
+    "gulp-less": "^3.0.3",
+    "socket.io": "0.9.x",
+    "mongodb": "1.3.x",
+    "JSV": "4.0.x"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA</title>
+    <link rel="stylesheet" href="css/spa.css"/>
+    <link rel="stylesheet" href="css/spa.shell.css" type="text/css"/>
+    <link rel="stylesheet" href="css/spa.chat.css"/>
+    <link rel="stylesheet" href="css/spa.avtr.css"/>
+
+    <!-- 第三方脚本 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jq/taffydb-2.6.2.js"></script>
+    <script src="js/jq/jquery-1.11.2.min.js"></script>
+    <script src="js/jq/jquery.uriAnchor.js"></script>
+    <script src="js/jq/jquery.event.gevent-0.1.9.js"></script>
+    <script src="js/jq/jquery.event.ue-0.3.2.js"></script>
+
+    <!-- 本地脚本 -->
+    <script src="js/spa.js"></script>
+    <script src="js/spa.util.js"></script>
+    <script src="js/spa.data.js"></script>
+    <script src="js/spa.fake.js"></script>
+    <script src="js/spa.model.js"></script>
+    <script src="js/spa.util_b.js"></script>
+    <script src="js/spa.shell.js"></script>
+    <script src="js/spa.chat.js"></script>
+    <script src="js/spa.avtr.js"></script>
+    <script>
+        $(function() {
+                spa.initModule($('#spa'));
+        });
+    </script>
+</head>
+<body>
+    <div id="spa"></div>
+</body>
+</html>
