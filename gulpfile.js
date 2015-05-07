@@ -15,7 +15,7 @@ gulp.task('style',function() {
 })
 
 gulp.task('script', function() {
-    return gulp.src('./public/js/*.js')
+    return gulp.src('./public/js/**/*.js')
         .pipe(connect.reload());
 })
 
@@ -32,7 +32,7 @@ gulp.task('connect', function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('./public/js/*.js', ['script']);
+    gulp.watch('./public/js/**/*.js', ['script']);
     gulp.watch('./src/css/*.less', ['style']);
     gulp.watch('./public/*.html', ['html']);
 })
